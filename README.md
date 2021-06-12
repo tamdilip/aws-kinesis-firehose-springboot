@@ -1,6 +1,8 @@
 # ⛵️aws-kinesis-firehose-springboot
 Simple Spring Boot project to stream data to S3 through Amazon Kinesis Firehose and query data via Athena with the schema crawled by Glue.
 
+`Data` 👉🏻 `Kinesis` 👉🏻 `S3` 👉🏻 `Glue` 👉🏻 `Athena`
+
 ## AWS Resources reference
 ### Kinesis firehose delivery
 ![Kinesis firehose delivery](https://raw.githubusercontent.com/tamdilip/aws-kinesis-firehose-springboot/main/src/main/resources/images/kinesis-s3.png)
