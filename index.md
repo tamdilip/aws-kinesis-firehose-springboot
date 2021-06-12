@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# ⛵️aws-kinesis-firehose-springboot
+Simple Spring Boot project to stream data to S3 through Amazon Kinesis Firehose and query data via Athena with the schema crawled by Glue.
 
-You can use the [editor on GitHub](https://github.com/tamdilip/aws-kinesis-firehose-springboot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## AWS Resources reference
+### Kinesis firehose delivery
+![Kinesis firehose delivery](https://raw.githubusercontent.com/tamdilip/aws-kinesis-firehose-springboot/main/src/main/resources/images/kinesis-s3.png)
+### S3 Buffered data
+![Kinesis firehose delivery](https://raw.githubusercontent.com/tamdilip/aws-kinesis-firehose-springboot/main/src/main/resources/images/s3.png)
+### Glue schema crawler
+![Kinesis firehose delivery](https://raw.githubusercontent.com/tamdilip/aws-kinesis-firehose-springboot/main/src/main/resources/images/Glue.png)
+### Athena data query
+![Kinesis firehose delivery](https://raw.githubusercontent.com/tamdilip/aws-kinesis-firehose-springboot/main/src/main/resources/images/Athena.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tamdilip/aws-kinesis-firehose-springboot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**Happy coding :) !!**
