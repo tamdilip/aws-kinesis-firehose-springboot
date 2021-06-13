@@ -51,17 +51,18 @@ public class SpringBootKinesisFirehoseApplication implements CommandLineRunner {
 		messageJson.put("loss", 76);
 		messageJson.put("nested", new JSONObject().put("name", "Dilipan"));
 
-		logger.info("Message delivering to Firehose: " + messageJson.toString());
+		logger.info("Message delivering to Firehose: {} ", messageJson);
 
 		SdkBytes sdkBytes = SdkBytes.fromByteArray(messageJson.toString().getBytes());
-		Record record = Record.builder().data(sdkBytes).build();
+		Record jsonData = Record.builder().data(sdkBytes).build();
 
 		PutRecordRequest recordRequest = PutRecordRequest.builder().deliveryStreamName(fireHoseDeliveryStreamName)
-				.record(record).build();
+				.record(jsonData).build();
 
 		PutRecordResponse recordResponse = firehoseClient.putRecord(recordRequest);
-
-		logger.info("Message delivered record ID: " + recordResponse.recordId());
+		String recordId = recordResponse.recordId();
+		
+		logger.info("Message delivered record ID: {}", recordId);
 	}
 
 }
