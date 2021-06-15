@@ -1,4 +1,7 @@
 # ⛵️aws-kinesis-firehose-springboot
+
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/tamdilip/aws-kinesis-firehose-springboot) 
+
 Simple Spring Boot project to stream data to S3 through Amazon Kinesis Firehose and query data via Athena with the schema crawled by Glue.
 
 `Data` 👉🏻 `Kinesis` 👉🏻 `S3` 👉🏻 `Glue` 👉🏻 `Athena`
