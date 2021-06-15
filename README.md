@@ -3,6 +3,13 @@ Simple Spring Boot project to stream data to S3 through Amazon Kinesis Firehose 
 
 `Data` 👉🏻 `Kinesis` 👉🏻 `S3` 👉🏻 `Glue` 👉🏻 `Athena`
 
+## Setup
+Update AWS access key and secret key in `application.properties`.
+
+```sh
+        $ mvn spring-boot:run
+```
+
 ## AWS Resources reference
 ### Kinesis firehose delivery
 ![Kinesis firehose delivery](https://raw.githubusercontent.com/tamdilip/aws-kinesis-firehose-springboot/main/src/main/resources/images/kinesis-s3.png)
